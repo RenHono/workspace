@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app2.MainActivity" >
+
+    <TextView
+        android:id="@+id/tvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="@android:color/holo_green_light"
+        android:text="信息" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvc"
+        android:layout_alignRight="@id/tvc"
+        android:background="@android:color/holo_orange_light"
+        android:text="与其他控件的末端对齐" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv2"
+        android:layout_below="@id/tv2"
+        android:background="@android:color/holo_red_light"
+        android:text="XXXXXXXXX" />
+
+</RelativeLayout>
