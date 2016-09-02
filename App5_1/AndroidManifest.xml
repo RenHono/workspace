@@ -24,8 +24,18 @@
         </activity>
         <activity
             android:name=".Sec"
-            android:theme="@android:style/Theme.DeviceDefault.Dialog"
-            android:label="@string/title_activity_sec" >
+            android:label="@string/title_activity_sec"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name=".Third"
+            android:label="@string/title_activity_third" >
+            <intent-filter>
+                <action android:name="yinshi" />
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
         </activity>
     </application>
 
