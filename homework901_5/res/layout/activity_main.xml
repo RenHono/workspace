@@ -1,0 +1,257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8FF"
+    android:orientation="vertical"
+    tools:context="com.example.homework901_5.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EE2C2C"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_logo" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:background="#ffffff"
+            android:hint="搜索京东商品" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="#ffffff"
+            android:src="@drawable/app_icon_voice" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/android_search_button_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ad_image" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/miaosha"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/miaosha" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_limit_buy_begin" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/miaosha"
+            android:text="还剩00时26分37秒" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv1"
+            android:layout_below="@id/tv1"
+            android:text="秒杀价：54.90" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv2"
+            android:layout_below="@id/tv2"
+            android:text="原价：89.00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="掌上秒杀>" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/b1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_promotion" />
+
+        <ImageButton
+            android:id="@+id/b2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/b1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/b1"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_history" />
+
+        <ImageButton
+            android:id="@+id/b3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/b1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/b2"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_collect" />
+
+        <ImageButton
+            android:id="@+id/b4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/b1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/b3"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_order" />
+
+        <ImageButton
+            android:id="@+id/b5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@id/b1"
+            android:layout_below="@id/b1"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_recharge" />
+
+        <ImageButton
+            android:id="@+id/b6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/b5"
+            android:layout_below="@id/b2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/b5"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_groupbuy" />
+
+        <ImageButton
+            android:id="@+id/b7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/b5"
+            android:layout_below="@id/b3"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/b6"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_lottery" />
+
+        <ImageButton
+            android:id="@+id/b8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/b5"
+            android:layout_below="@id/b4"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/b7"
+            android:background="@drawable/sec"
+            android:src="@drawable/shortcuts_icon_life_journey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#3B3B3B"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/select1" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/select2" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/select3" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/select4" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/select5" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
