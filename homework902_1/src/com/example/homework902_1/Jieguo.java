@@ -17,24 +17,28 @@ public class Jieguo extends Activity {
 	private TextView tv2;
 	private TextView tv22;
 	String str = null;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_jieguo);
 		tv2 = (TextView) findViewById(R.id.tv2);
 		tv22 = (TextView) findViewById(R.id.tv22);
-		
+
 		Intent intent = getIntent();
-		
-	str = intent.getStringExtra("etzhi");
-	int a =Integer.parseInt(str);
-	
+
+		str = intent.getStringExtra("etzhi");
+
+		long a = str.hashCode();
+		Random random = new Random(a);
+		int b = (int) Math.abs(random.nextDouble() * 100);
+		tv22.setText(""+str+":您的RP值为："+b);
 	}
-@Override
-protected void onStart() {
-	// TODO Auto-generated method stub
-	super.onStart();
-	
-	tv22.setText(str);
-}
+
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+
+	}
 }
