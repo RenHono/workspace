@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">homework905_2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_xun">XunActivity</string>
+<string-array name="test	">
+    <item >AAAA</item>
+    <item >BBBB</item>
+    <item >CCCC</item>
+    <item >DDDD</item>
+</string-array>
+</resources>
