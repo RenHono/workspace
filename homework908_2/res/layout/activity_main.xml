@@ -8,7 +8,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="xyz.renhono.homework908_2.MainActivity" >
-
+ 
+    <EditText 
+        android:id="@+id/etx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此输入ip"
+        
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
