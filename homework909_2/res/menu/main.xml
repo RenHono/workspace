@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="xyz.renhono.homework909_2.MainActivity" >
+    tools:context="xyz.renhono.homewok909_1.MainActivity" >
 
     <item
         android:id="@+id/action_settings"
