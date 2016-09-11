@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.day10_1.MainActivity" >
+
+    <ListView
+        android:id="@+id/lvnews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- 更多的布局 -->
+
+    <LinearLayout
+        android:id="@+id/llmore"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="更多..." />
+    </LinearLayout>
+
+</RelativeLayout>
