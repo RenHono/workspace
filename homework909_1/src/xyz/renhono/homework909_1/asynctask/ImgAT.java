@@ -17,27 +17,19 @@ public class ImgAT extends AsyncTask<String, Void, Bitmap> {
 	@Override
 	protected Bitmap doInBackground(String... params) {
 		// TODO Auto-generated method stub
-		try {
-			Bitmap bitmap = new HttpUtil().getJsonBitmap(params[0]);
-			
-			
-			
 
-			return bitmap;
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
+		Bitmap bitmap = new HttpUtil().getJsonBitmap(params[0]);
+
+		return bitmap;
+
 	}
-	
 
 	@Override
 	protected void onPostExecute(Bitmap result) {
 		// TODO Auto-generated method stub
-		
+
 		ivx.setImageBitmap(result);
-		
+
 		super.onPostExecute(result);
 	}
 

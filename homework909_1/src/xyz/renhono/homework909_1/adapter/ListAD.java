@@ -3,6 +3,7 @@ package xyz.renhono.homework909_1.adapter;
 import java.util.List;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +55,7 @@ public class ListAD extends BaseAdapter {
 
 			holder.tvname = (TextView) convertView.findViewById(R.id.tvname);
 			holder.tvcon = (TextView) convertView.findViewById(R.id.tvcon);
+			holder.iv=(ImageView)convertView.findViewById(R.id.iv);
 
 			convertView.setTag(holder);
 
@@ -62,13 +64,13 @@ public class ListAD extends BaseAdapter {
 			holder = (ViewHolder) convertView.getTag();
 
 		}
-		Data data=list.get(position);
-		
+		Data data = list.get(position);
+
 		holder.tvname.setText(data.getName());
 		holder.tvcon.setText(data.getContent());
-		
-//	new ImgAT(holder.iv).execute(data.getImage());
-		
+
+		Log.i("xxx", data.getImage().toString());
+		new ImgAT(holder.iv).execute(data.getImage());
 
 		return convertView;
 	}
