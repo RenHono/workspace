@@ -20,9 +20,10 @@ public class Splash extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash_t);
 
-//		sp = getSharedPreferences("fpp", Context.MODE_PRIVATE);
+		sp = getSharedPreferences("fpp", Context.MODE_PRIVATE);
 //		Editor editor = sp.edit();
 //		editor.putInt("enter", 1);
+//		editor.commit();
 
 		new Handler().postDelayed(new Runnable() {
 
@@ -40,7 +41,10 @@ public class Splash extends Activity {
 					Intent mainintent = new Intent(Splash.this, Guide.class);
 					Splash.this.startActivity(mainintent);
 					Splash.this.finish();
-		
+					Editor editor = sp.edit();
+					editor.putInt("enter", 1);
+					editor.commit();
+
 				}
 			}
 		}, DISPLAY_TIME);

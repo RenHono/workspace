@@ -1,9 +1,11 @@
 package xyz.renhono.homework913_1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Guide extends Activity {
 
@@ -13,22 +15,9 @@ public class Guide extends Activity {
 		setContentView(R.layout.activity_guide);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.guide, menu);
-		return true;
-	}
+	public void tomain(View view) {
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+		Intent intent = new Intent(Guide.this, MainActivity.class);
+		startActivity(intent);
 	}
 }
